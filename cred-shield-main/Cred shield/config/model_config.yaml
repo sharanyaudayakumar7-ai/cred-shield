@@ -1,0 +1,18 @@
+model:
+  name: roberta-base
+  version: latest
+thresholds:
+  ai_classifier: 0.5
+  language_analyzer: 0.3
+  predictability_scorer: 0.4
+  variation_analyzer: 0.2
+training:
+  batch_size: 8
+  epochs: 3
+feature_weights:
+  ai_score: 0.4
+  vocab_diversity: 0.2
+  perplexity: 0.2
+  lexical_diversity: 0.2
+model_paths:
+  classifier: data/models/roberta-base

@@ -1,0 +1,15 @@
+torch
+transformers
+scikit-learn
+numpy
+pandas
+nltk
+spacy
+textstat
+datasets
+accelerate
+evaluate
+wandb
+pytest
+black
+flake8
