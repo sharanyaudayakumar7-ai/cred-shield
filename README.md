@@ -1,31 +1,83 @@
-Cred Shield AI Detection Engine
-Overview
-Cred Shield is a modular AI detection engine for text classification and language pattern analysis, designed to distinguish AI-generated text from human responses. It serves as the foundation for real-time detection systems.
+**🛡️ CredShield – AI Detection Engine**
 
-Features
-Transformer-based AI vs human text classification
-Language pattern analysis
-Predictability and variation scoring
-Modular, extensible architecture
-Training and evaluation pipeline
-Installation
+CredShield is a modular AI detection engine designed to classify text as AI-generated or human-written.
+It performs language pattern analysis and text classification to identify subtle differences between AI responses and human writing.
+
+The system is built with a scalable and extensible architecture, making it suitable for integration into real-time AI detection platforms, research workflows, and content verification systems.
+
+**✨ Features**
+
+🤖 AI vs Human Text Classification using transformer-based models
+
+🧠 Language Pattern Analysis to identify stylistic differences
+
+📊 Predictability and Variation Scoring for deeper text evaluation
+
+🧩 Modular Architecture designed for extensibility and experimentation
+
+⚙️ Training and Evaluation Pipeline for model development and testing
+
+**🛠 Tech Stack**
+
+🐍 Python
+
+🤖 Transformer Models (RoBERTa / NLP models)
+
+📚 Machine Learning & NLP
+
+📊 Model Evaluation Metrics
+
+**⚙️ Installation**
+
+Clone the repository and install dependencies.
+
+git clone https://github.com/yourusername/cred-shield.git
+cd cred-shield
 pip install -r requirements.txt
-Usage
-Run training: python scripts/train_model.py --config config/training_config.yaml --data data/processed/train.csv
-Run evaluation: python scripts/evaluate_model.py --model roberta-base --test_data data/processed/test.csv
-Demo detection: python scripts/demo_detection.py
-API Documentation
-See src/ for module details. Main entry point: CredShieldDetectionEngine in src/detection_engine.py.
 
-Training Guide
-Prepare datasets in data/raw and data/processed
-Configure parameters in config/
-Use scripts in scripts/ for training and evaluation
-Evaluation Metrics
-Accuracy, Precision, Recall, F1, ROC-AUC
-Language pattern and variation scores
-Contribution
-Fork the repo, create feature branches, submit PRs
-Follow code style: black, flake8
-License
-MIT
+**🚀 Usage**
+Train the Model
+python scripts/train_model.py --config config/training_config.yaml --data data/processed/train.csv
+Evaluate the Model
+python scripts/evaluate_model.py --model roberta-base --test_data data/processed/test.csv
+Run Demo Detection
+python scripts/demo_detection.py
+
+This will run a demonstration that classifies text as AI-generated or human-written.
+
+Main entry point: src/detection_engine.py
+
+Class used :CredShieldDetectionEngine
+
+🧪 Training Guide
+
+Prepare datasets inside:data/raw ,data/processed
+
+Configure parameters in: config/
+
+Run training and evaluation scripts from: scripts/
+
+**📊 Evaluation Metrics**
+
+The model performance is evaluated using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1 Score
+
+ROC-AUC
+
+Additional analysis includes:
+
+Language pattern scoring
+
+Predictability and variation metrics
+
+
+**📄 License**
+This project is licensed under the MIT License.
+
