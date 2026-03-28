@@ -76,8 +76,3 @@ Additional analysis includes:
 Language pattern scoring
 
 Predictability and variation metrics
-
-
-**📄 License**
-This project is licensed under the MIT License.
-
