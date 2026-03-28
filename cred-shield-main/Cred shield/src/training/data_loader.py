@@ -1,3 +1,5 @@
+#import libraries 
+
 import pandas as pd
 from datasets import load_dataset
 from typing import List, Dict, Any
@@ -19,7 +21,8 @@ class DataLoader:
         # Placeholder for preprocessing
         return df
 
-    def split(self, df: pd.DataFrame, val_ratio: float = 0.2, test_ratio: float = 0.1) -> Dict[str, pd.DataFrame]:
+#training data sets 
+        def split(self, df: pd.DataFrame, val_ratio: float = 0.2, test_ratio: float = 0.1) -> Dict[str, pd.DataFrame]:
         n = len(df)
         val_size = int(n * val_ratio)
         test_size = int(n * test_ratio)
